@@ -28,7 +28,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "Web-Sahar" --name "Web-Sahar" --resource-group "az104"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "Web-Sahar" --name "Web-Sahar" --resource-group "az104" --no-wait
            
  # Azure logout
     - name: logout
